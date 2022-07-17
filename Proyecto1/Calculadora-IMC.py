@@ -1,10 +1,11 @@
 #Crear un programa que pida al usuario su nombre, apellido paterno, apellido materno, edad, peso y estatura, 
 # desplegarlos en pantalla junto con su Índice de Masa Corporal (IMC).
 #Obtener los datos
+nombre = input("Introduzca su nombre: ")
+apellido_paterno = input("Introduzca su apellido paterno: ")
+apellido_materno = input("Introduzca su apellido materno: ")
+
 try:
-    nombre = input("Introduzca su nombre: ")
-    apellido_paterno = input("Introduzca su apellido paterno: ")
-    apellido_materno = input("Introduzca su apellido materno: ")
     edad = int(input("Introduzca su edad: "))
     peso = float(input("Introduzca su peso en kilogramos: "))
     estatura = float(input("Introduzca su estatura en metros: "))
@@ -16,6 +17,7 @@ except:
 IMC = peso / (estatura**2)
 
 #Desplegar los datos en pantalla
+print("------------------------------------------")
 print("Nombre: %s" %(nombre,))
 print("Apellido paterno: %s" %(apellido_paterno,))
 print("Apellido materno: %s" %(apellido_materno,))
